@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintBottom_toTopOf="parent"
+    android:orientation="vertical"
+    tools:context=".tab2">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_in_tem_robe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unesite temperaturu robe (°C)"
+            android:maxLength="2"
+            android:inputType="number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_in_vlaga_robe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:errorEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unesite vlagu robe (%)"
+            android:maxLength="2"
+            android:inputType="number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PROVJERI"
+        android:id="@+id/btnProvjeri"
+        />
+
+    <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignBaseline="@+id/tvZitniZizak"
+            android:layout_marginLeft="5dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Žitni žižak"
+            android:textAllCaps="false"
+            android:background="@drawable/button_color"
+            android:id="@+id/btnZitniZizak"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnZitniZizak"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvZitniZizak"
+            />
+
+        <TextView
+            android:layout_alignBaseline="@+id/tvKukuruzniZizak"
+            android:layout_marginLeft="5dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnZitniZizak"
+            android:text="Kukuruzni žižak"
+            android:textAllCaps="false"
+            android:background="@drawable/button_color"
+            android:id="@+id/btnKukuruzniZizak"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnKukuruzniZizak"
+            android:layout_below="@id/tvZitniZizak"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvKukuruzniZizak"
+            />
+
+        <TextView
+            android:layout_alignBaseline="@+id/tvRizoperta"
+            android:layout_marginLeft="5dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnKukuruzniZizak"
+            android:text="Rizoperta"
+            android:textAllCaps="false"
+            android:background="@drawable/button_color"
+            android:id="@+id/btnRizoperta"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnRizoperta"
+            android:layout_below="@id/tvKukuruzniZizak"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvRizoperta"
+            />
+
+        <TextView
+            android:layout_alignBaseline="@+id/tvZitniMoljac"
+            android:layout_marginLeft="5dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnRizoperta"
+            android:text="Žitni moljac"
+            android:textAllCaps="false"
+            android:background="@drawable/button_color"
+            android:id="@+id/btnZitniMoljac"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnZitniMoljac"
+            android:layout_below="@id/tvRizoperta"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvZitniMoljac"
+            />
+
+        <TextView
+            android:layout_alignBaseline="@+id/tvHambarskiMoljac"
+            android:layout_marginLeft="5dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnZitniMoljac"
+            android:text="Hambarski Moljac"
+            android:textAllCaps="false"
+            android:background="@drawable/button_color"
+            android:id="@+id/btnHambarskiMoljac"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnHambarskiMoljac"
+            android:layout_below="@id/tvZitniMoljac"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvHambarskiMoljac"
+            />
+
+        <TextView
+            android:layout_alignBaseline="@+id/tvSurinamskiBrasnar"
+            android:layout_marginLeft="5dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnHambarskiMoljac"
+            android:text="Surinamski brašnar"
+            android:textAllCaps="false"
+            android:background="@drawable/button_color"
+            android:id="@+id/btnSurinamskiBrasnar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnSurinamskiBrasnar"
+            android:layout_below="@id/tvHambarskiMoljac"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvSurinamskiBrasnar"
+            />
+
+        <TextView
+            android:layout_alignBaseline="@+id/tvCryptolestes"
+            android:layout_marginLeft="5dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnSurinamskiBrasnar"
+            android:text="Cryptolestes spp."
+            android:textAllCaps="false"
+            android:background="@drawable/button_color"
+            android:id="@+id/btnCryptolestes"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnCryptolestes"
+            android:layout_below="@id/tvSurinamskiBrasnar"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvCryptolestes"
+            />
+
+        <TextView
+            android:layout_alignBaseline="@+id/tvKestenjastiBrasnar"
+            android:layout_marginLeft="5dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnCryptolestes"
+            android:text="Kestenjasti brašnar"
+            android:textAllCaps="false"
+            android:background="@drawable/button_color"
+            android:id="@+id/btnKestenjastiBrasnar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnKestenjastiBrasnar"
+            android:layout_below="@id/tvCryptolestes"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvKestenjastiBrasnar"
+            />
+
+        <TextView
+            android:layout_alignBaseline="@+id/tvMaliBrasnar"
+            android:layout_marginLeft="5dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnKestenjastiBrasnar"
+            android:text="Mali brašnar"
+            android:textAllCaps="false"
+            android:background="@drawable/button_color"
+            android:id="@+id/btnMaliBrasnar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnMaliBrasnar"
+            android:layout_below="@id/tvKestenjastiBrasnar"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvMaliBrasnar"
+            />
+
+        <TextView
+            android:layout_alignBaseline="@+id/tvMauritanskiBrasnar"
+            android:layout_marginLeft="5dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnMaliBrasnar"
+            android:text="Mauritanski brašnar"
+            android:textAllCaps="false"
+            android:background="@drawable/button_color"
+            android:id="@+id/btnMauritanskiBrasnar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnMauritanskiBrasnar"
+            android:layout_below="@id/tvMaliBrasnar"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvMauritanskiBrasnar"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
